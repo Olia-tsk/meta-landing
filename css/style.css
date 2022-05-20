@@ -374,13 +374,7 @@ body, html {
   background-color: #000000;
 }
 
-h1 {
-  margin: 0;
-  font-family: 'Audiowide', cursive;
-  text-transform: uppercase;
-}
-
-h3 {
+h1, h2, h3 {
   margin: 0;
   font-family: 'Audiowide', cursive;
   text-transform: uppercase;
@@ -575,5 +569,49 @@ ul {
 
 .info-content_text:last-of-type {
   margin-bottom: 36px;
+}
+
+.artists-title {
+  margin-bottom: 127px;
+  margin-top: 113px;
+  font-size: 79px;
+  line-height: 88px;
+}
+
+.artists-cards {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.artists-cards_item {
+  margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.artists-cards_name {
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */
