@@ -11,7 +11,3 @@ spicy-sections::part(tab-list) {
   /* by default tab-list uses flex to display in the inline direction */
   display: block;
 }
-
-spicy-sections [part="tab-bar"] ::slotted([tabindex="0"]) {
-  border-bottom: 1px solid #8dfd1b;
-}
