@@ -1,0 +1,17 @@
+spicy-sections {
+  /* just to show that it's when tabs are employed */
+  --const-mq-affordances: [screen and (min-width: 5px) ] tab-bar;
+
+  /* one col for the tab-bar, one for the content */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+spicy-sections::part(tab-list) {
+  /* by default tab-list uses flex to display in the inline direction */
+  display: block;
+}
+
+spicy-sections [part="tab-bar"] ::slotted([tabindex="0"]) {
+  border-bottom: 1px solid #8dfd1b;
+}
