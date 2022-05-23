@@ -397,7 +397,7 @@ ul {
 
 .icon {
   fill: #000000;
-  background-color: #ffffff;
+  background-color: none;
   width: 20px;
   height: 20px;
 }
@@ -701,6 +701,48 @@ ul {
 
 .roadmap-parallax {
   z-index: -5;
+}
+
+.join {
+  padding-bottom: 118px;
+}
+
+.join-content {
+  padding-bottom: 118px;
+  padding-top: 118px;
+  background-image: url("../images/join_bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-left: 135px;
+  margin-right: 135px;
+}
+
+.join-content_title {
+  margin-bottom: 35px;
+  font-size: 51px;
+  line-height: 61px;
+}
+
+.join-content_title--green {
+  font: inherit;
+  color: #8DFD1B;
+}
+
+.join-content_text {
+  width: 345px;
+  margin-bottom: 35px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.join-content_button {
+  width: 213px;
+  height: 43px;
+}
+
+.join-content_icon {
+  margin-right: 9px;
 }
 
 .footer {
