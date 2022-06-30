@@ -11,3 +11,7 @@ spicy-sections::part(tab-list) {
   /* by default tab-list uses flex to display in the inline direction */
   display: block;
 }
+
+.stories-tab_title:where([aria-selected="true"]) {
+  color: #8dfd1b;
+}
