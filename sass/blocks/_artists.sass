@@ -1,19 +1,12 @@
 .artists
-  padding-bottom: 200px
+  padding-bottom: 100px
   &-title
-    margin-bottom: 127px
-    margin-top: 113px
-    font-size: 79px
-    line-height: 88px
+    margin-bottom: 90px
   &-cards
-    margin-left: 40px
-    margin-right: 40px
-    display: flex
-    flex-wrap: wrap
-    justify-content: flex-start
-    align-items: flex-start
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(247px, 1fr))
+    grid-gap: 60px
     &_item
-      margin-right: 60px
       display: flex
       flex-direction: column
       align-items: center
