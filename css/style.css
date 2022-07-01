@@ -576,7 +576,7 @@ ul {
 
 .info {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .info .container {
@@ -645,7 +645,7 @@ ul {
 }
 
 .artists {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .artists-title {
@@ -681,7 +681,7 @@ ul {
 }
 
 .stories {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .stories-title {
@@ -755,8 +755,43 @@ ul {
   z-index: -5;
 }
 
+.partners {
+  padding-bottom: 200px;
+}
+
+.partners-title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8DFD1B;
+}
+
+.partners-logos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(323px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(323px, 1fr));
+  justify-items: center;
+  -webkit-column-gap: 85px;
+          column-gap: 85px;
+  row-gap: 60px;
+}
+
+.partners-logos_item {
+  display: inline-block;
+  font-family: 'Audiowide', cursive;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .faq {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .faq .container {
@@ -832,7 +867,7 @@ ul {
 }
 
 .team {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .team-title {
@@ -901,7 +936,7 @@ ul {
 }
 
 .join {
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 .join .container {
