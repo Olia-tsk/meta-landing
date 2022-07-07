@@ -1,8 +1,82 @@
 .roadmap
-  height: 1000px
-  background-image: url('../images/circles.svg'), url('../images/circles.svg')
-  background-repeat: no-repeat, no-repeat
-  background-position: left top, right bottom
+  padding-bottom: 230px
+  background-image: url('../images/circles.svg'), url('../images/circles.svg'), url('../images/circles.svg')
+  background-repeat: no-repeat, no-repeat, no-repeat
+  background-position: left top, right center, left bottom
   z-index: 5
   &-parallax
+    width: 100%
+    height: 240px
+    object-fit: cover
+    margin-bottom: 120px
     z-index: -5
+  &-title
+    text-align: center
+    margin-bottom: 105px
+  &-cards
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_item
+      margin-bottom: 50px
+    &_separator
+      margin-bottom: 50px
+      height: 40px
+      width: 1px
+      background-color: #8DFD1B
+
+.card
+  border: 1px solid #8DFD1B
+  background-color: #222222
+  width: 540px
+  &-header
+    display: flex
+    align-items: center
+    padding: 12px
+    border-bottom: 1px solid #8DFD1B
+    &_number
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 45px
+      height: 45px
+      margin-right: 12px
+      font-size: 28px
+      line-height: 28px
+      color: #8DFD1B
+      border: 1px solid #8DFD1B
+    &_phase
+      margin: 0
+      font-size: 8px
+      line-height: 12px
+      letter-spacing: 1px
+      text-transform: uppercase
+      color: #8DFD1B
+    &_period
+      margin: 0
+      font-size: 16px
+      line-height: 28px
+      text-transform: uppercase
+
+  &-body
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding: 30px 12px
+    &_content
+    &_list
+      padding: 0 22px 11px
+      &-item
+        font-family: 'Inter', sans-serif
+        font-size: 11px
+        line-height: 32px
+    &_desc
+      margin: 0
+      width: 300px
+      font-family: 'Inter', sans-serif
+      font-size: 11px
+      line-height: 26px
+    &_link
+      font-size: 12px
+      line-height: 26px
+      color: #8DFD1B

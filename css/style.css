@@ -370,6 +370,18 @@ template {
   color: #ffffff;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DD204D), color-stop(99%, #8DFD1B));
+  background-image: linear-gradient(180deg, #DD204D 0%, #8DFD1B 99%);
+  -webkit-box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
 body, html {
   background-color: #000000;
 }
@@ -744,15 +756,138 @@ ul {
 }
 
 .roadmap {
-  height: 1000px;
-  background-image: url("../images/circles.svg"), url("../images/circles.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left top, right bottom;
+  padding-bottom: 230px;
+  background-image: url("../images/circles.svg"), url("../images/circles.svg"), url("../images/circles.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left top, right center, left bottom;
   z-index: 5;
 }
 
 .roadmap-parallax {
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 120px;
   z-index: -5;
+}
+
+.roadmap-title {
+  text-align: center;
+  margin-bottom: 105px;
+}
+
+.roadmap-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.roadmap-cards_item {
+  margin-bottom: 50px;
+}
+
+.roadmap-cards_separator {
+  margin-bottom: 50px;
+  height: 40px;
+  width: 1px;
+  background-color: #8DFD1B;
+}
+
+.card {
+  border: 1px solid #8DFD1B;
+  background-color: #222222;
+  width: 540px;
+}
+
+.card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #8DFD1B;
+}
+
+.card-header_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 12px;
+  font-size: 28px;
+  line-height: 28px;
+  color: #8DFD1B;
+  border: 1px solid #8DFD1B;
+}
+
+.card-header_phase {
+  margin: 0;
+  font-size: 8px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #8DFD1B;
+}
+
+.card-header_period {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px 12px;
+}
+
+.card-body_list {
+  padding: 0 22px 11px;
+}
+
+.card-body_list-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  line-height: 32px;
+}
+
+.card-body_desc {
+  margin: 0;
+  width: 300px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  line-height: 26px;
+}
+
+.card-body_link {
+  font-size: 12px;
+  line-height: 26px;
+  color: #8DFD1B;
 }
 
 .partners {
